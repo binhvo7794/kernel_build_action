@@ -15,17 +15,19 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/ImSpiDy/kernel_xiaomi_lavender
+          kernel-dir: lavender
+          kernel-branch: 14-Retro
+          config: lavender_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: true
-          ksu-version: main
-          android-version: 12
-          aosp-clang-version: r383902
+          ksu: false
+          android-version: 14
+          aosp-clang-version: r487747c
           python-27: true
           disable-lto: true
           anykernel3: true
+          anykernel3-url: https://github.com/ImSpiDy/AnyKernel3
+          lxc: true
+          lxc-patch: true
