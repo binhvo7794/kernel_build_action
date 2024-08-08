@@ -15,19 +15,17 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/ImSpiDy/kernel_xiaomi_lavender
-          kernel-dir: lavender
-          kernel-branch: 14-Retro
-          config: lavender_defconfig
+          kernel-url: https://github.com/TheMatheusDev/android_kernel_xiaomi_sm6225-2
+          kernel-dir: spes
+          kernel-branch: uvite
+          config: spes-perf_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: false
+          ksu: true
           android-version: 14
           aosp-clang-version: r487747c
           python-27: true
-          disable-lto: true
+          disable-lto: false
           anykernel3: true
-          anykernel3-url: https://github.com/ImSpiDy/AnyKernel3
-          lxc: true
-          lxc-patch: true
+          anykernel3-url: https://github.com/binhvo7794/AnyKernel3
