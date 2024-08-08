@@ -18,7 +18,7 @@ jobs:
           kernel-url: https://github.com/TheMatheusDev/android_kernel_xiaomi_sm6225-2
           kernel-dir: spes
           kernel-branch: uvite
-          config: spes-perf_defconfig
+          config: vendor/spes-perf_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
