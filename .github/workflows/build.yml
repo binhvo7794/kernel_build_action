@@ -13,12 +13,11 @@ jobs:
 
     steps:
     - name: Build Kernel
-      uses: dabao1955/kernel_build_action@main
+      uses: binhvo7794/kernel_build_action@main
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/LineageOS/android_kernel_xiaomi_sdm660.git
+          kernel-branch: lineage-18.1
+          config: lavender_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
@@ -28,3 +27,4 @@ jobs:
           aosp-clang-version: r383902
           disable-lto: true
           anykernel3: true
+          anykernel3-url: https://github.com/ImSpiDy/AnyKernel3
