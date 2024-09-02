@@ -21,7 +21,8 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: false
+          ksu: true
+          ksu-version: main
           lxc: true
           lxc-patch: true
           nethunter: true
