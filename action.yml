@@ -126,7 +126,7 @@ inputs:
   extra-cmd:
     description: 'Extra options of building kernel.'
     required: false
-    default: "Image.gz-dtb"
+    default: ""
 
 runs:
   using: 'composite'
