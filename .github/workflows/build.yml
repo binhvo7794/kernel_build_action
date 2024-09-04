@@ -15,7 +15,7 @@ jobs:
     - name: Build Kernel
       uses: binhvo7794/kernel_build_action@main
       with:
-          kernel-url: https://github.com/LineageOS/android_kernel_xiaomi_sdm660.git
+          kernel-url: https://github.com/ElXreno/android_kernel_xiaomi_sdm660
           kernel-branch: lineage-18.1
           config: lavender_defconfig
           arch: arm64
