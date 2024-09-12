@@ -1,3 +1,0 @@
-KernelSU scripts
-=====
-usage: todo
