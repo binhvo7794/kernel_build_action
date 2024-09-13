@@ -356,6 +356,8 @@ runs:
 
          echo "::group:: Building Kernel with selected cross compiler"
          mkdir out -p -v
+         git config --global user.email "cc@cc.cc"
+         git config --global user.name "dmssldl"
          git add .
          git commit -m "Clean"
          COMMAND="make -j$(nproc --all) ${{ inputs.config }} ARCH=${{ inputs.arch }} all ${{ inputs.extra-cmd }} O=out"
