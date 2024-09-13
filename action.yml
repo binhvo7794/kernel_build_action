@@ -358,8 +358,8 @@ runs:
          mkdir out -p -v
          git config --global user.email "cc@cc.cc"
          git config --global user.name "dmssldl"
-         git add .
-         git commit -m "Clean"
+         #git add .
+         #git commit -m "Clean"
          COMMAND="make -j$(nproc --all) ${{ inputs.config }} ARCH=${{ inputs.arch }} all ${{ inputs.extra-cmd }} O=out"
          if [ ${{ inputs.aosp-clang }} = true ] || [ ! -z ${{ inputs.other-clang-url}} ]; then
               COMMAND+=" PATH=$HOME/clang/bin:$PATH"
